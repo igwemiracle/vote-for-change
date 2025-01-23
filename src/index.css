@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-links {
+    @apply block text-white text-center px-4 py-3 lg:text-lg hover:bg-[#a0442a] active:hover:bg-[#a0442a] active:text-white
+    xs:text-[10px];
+  }
+  .Header1 {
+    @apply ss:text-[26px] ss:leading-[35px] sm:text-[50px] sm:leading-[70px] lg:text-[69px] lg:leading-[80px] font-semibold;
+  }
+}
