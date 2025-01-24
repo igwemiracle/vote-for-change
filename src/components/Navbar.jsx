@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   return (
     <div className="w-full m-0 bg-[#2D3F51]">

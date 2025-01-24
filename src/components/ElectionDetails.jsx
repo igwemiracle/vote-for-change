@@ -10,8 +10,9 @@ export default function ElectionDetails() {
           <h3 className="text-3xl font-bold text-gray-800 mb-6">How to Vote</h3>
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             <div className="flex-1">
+
               <img
-                src={images.votingProcess}
+                src={images.voting2}
                 alt="Voting Process Illustration"
                 className="w-full h-auto rounded-lg shadow-md"
               />
