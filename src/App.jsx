@@ -7,20 +7,18 @@ import CandidateProfile from './pages/CandidateProfile';
 import VotingPage from './pages/VotingPage';
 import ConfirmationPage from './pages/ConfirmationPage';
 import SignUpPage from './pages/SignUpPage';
-import LoginPage from './pages/LoginPage'; // New component
-import ProtectedRoute from './components/ProtectedRoute'; // Enhanced component
-import Navbar from './components/Navbar'
+import LoginPage from './pages/LoginPage';
+import ProtectedRoute from './components/ProtectedRoute';
+import Navbar from './layouts/Navbar'
 
 import './index.css';
-import Footer from './components/Footer';
+import Footer from './layouts/Footer';
 
 
 const App = () => (
   <Router>
     <Navbar />
-    <div className='relative'>
-      <PageRoutes />
-    </div>
+    <PageRoutes />
     <Footer />
   </Router>
 );
