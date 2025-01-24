@@ -1,8 +1,8 @@
 import tini from './tini.png'
 import buhari from './buhari.png'
 import jona from './jona.png'
-import voting from './voting.png'
+import voting1 from './voting1.png'
 
 export const images = {
-  tini, buhari, jona, voting
+  tini, buhari, jona, voting1
 }
