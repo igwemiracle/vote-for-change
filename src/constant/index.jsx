@@ -44,7 +44,7 @@ export const cardData = [
   },
   {
     id: 3,
-    title: "Voting Page",
+    title: "Voting Now!",
     description: "Select your preferred candidate and cast your vote.",
     icon: images.vote1,
     buttonText: "Vote Now",
