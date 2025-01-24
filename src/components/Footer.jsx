@@ -27,9 +27,7 @@ const Footer = () => {
               <li>
                 <Link to="/vote" className="text-[#AF4D32] hover:text-gray-200 transition duration-300">Vote now</Link>
               </li>
-              <li>
-                <Link to="/contact" className="text-[#AF4D32] hover:text-gray-200 transition duration-300">Contact us</Link>
-              </li>
+
             </ul>
           </div>
 

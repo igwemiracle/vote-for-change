@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { heroData } from '../constant';
-import CardComponent from '../components/CardComponent';
 import ElectionDetails from '../components/ElectionDetails';
+import CardContainer from '../components/CardComponent/CardContainer';
 
 const Homepage = () => {
   const [current, setCurrent] = useState(0);
@@ -43,8 +43,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* Cards Section */}
-      <CardComponent />
-
+      <CardContainer />
       {/* Election Details Section */}
       <ElectionDetails />
     </div>

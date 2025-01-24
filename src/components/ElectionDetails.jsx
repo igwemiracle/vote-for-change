@@ -75,6 +75,7 @@ export default function ElectionDetails() {
           <p className="text-center mt-8 text-lg text-gray-700">
             Remember to cast your vote before the deadline!
           </p>
+
         </div>
       </div>
     </div>

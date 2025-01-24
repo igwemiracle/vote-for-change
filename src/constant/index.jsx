@@ -25,6 +25,34 @@ export const heroData = [
   },
 ];
 
+export const cardData = [
+  {
+    id: 1,
+    title: "Election Details",
+    description: "Find out the election dates, instructions, and more.",
+    icon: images.details,
+    buttonText: "Learn More",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Candidate Profiles",
+    description: "Explore each candidate's profile, biography, and manifesto.",
+    icon: images.candidates,
+    buttonText: "View Profiles",
+    link: "/candidates",
+  },
+  {
+    id: 3,
+    title: "Voting Page",
+    description: "Select your preferred candidate and cast your vote.",
+    icon: images.vote1,
+    buttonText: "Vote Now",
+    link: "/vote",
+  },
+];
+
+
 export const Database = [
   {
     id: 1,
