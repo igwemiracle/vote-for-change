@@ -12,7 +12,7 @@ export default function ElectionDetails() {
             <div className="flex-1">
 
               <img
-                src={images.voting2}
+                src={images.voting1}
                 alt="Voting Process Illustration"
                 className="w-full h-auto rounded-lg shadow-md"
               />
