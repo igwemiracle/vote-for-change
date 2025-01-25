@@ -53,6 +53,35 @@ export const cardData = [
 ];
 
 
+export const events = [
+  {
+    id: 1,
+    title: "Election Registration Opens",
+    description: "Voter registration opens. Be sure to sign up to vote before the deadline.",
+  },
+  {
+    id: 2,
+    title: "Debates Begin",
+    description: "Candidates start engaging with the public through debates on key issues.",
+  },
+  {
+    id: 3,
+    title: "Polling Stations Open",
+    description: "The day has arrived! Head to your polling station and cast your vote.",
+  },
+  {
+    id: 4,
+    title: "Voting Ends",
+    description: "Polling stations close, and the counting process begins.",
+  },
+  {
+    id: 5,
+    title: "Election Results Announced",
+    description: "Stay tuned for live updates and the announcement of election results.",
+  },
+];
+
+
 export const Database = [
   {
     id: 1,

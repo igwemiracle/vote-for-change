@@ -5,11 +5,13 @@ const Navbar = () => {
   return (
     <>
       {/* Header Section */}
-      <div className='flex flex-wrap justify-center items-center mx-auto bg-[#2D3F51]'>
-        <img className='xs:w-[95px] xs:h-[95px] lg:w-[170px] lg:h-[170px] lg:ml-12' src={images.bsulogo} alt="logo" />
-        <div className=" p-8 flex flex-col gap-8 items-center lg:w-[65%] mx-auto text-center">
+      <div className='flex flex-wrap gap-6 justify-center py-4 items-center mx-auto bg-[#2D3F51]'>
+        <img className='xs:w-[95px] xs:h-[95px] lg:w-[170px] lg:h-[170px]' src={images.bsulogo} alt="logo" />
+        <div className="flex flex-col gap-4 text-center">
           <h1 className="text-2xl font-bold text-white lg:text-[60px] lg:leading-[4.5rem] ss:text-[26px]">Welcome to Student Elections 2025</h1>
-          <p className="text-white lg:text-[20px] ss:text-[10px] ">Participate in shaping the future by voting for your student leaders!</p>
+          <p className="text-white lg:text-[20px] ss:text-[10px] ">
+            Participate in shaping the future by voting for your student leaders!
+          </p>
         </div>
       </div>
 

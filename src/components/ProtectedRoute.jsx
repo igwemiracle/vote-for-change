@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
     children
   ) : (
     <Navigate
-      to="/signup"
+      to="/signin"
       replace
       state={{ message: 'You must have an account to cast your vote.', from: location.pathname }}
     />

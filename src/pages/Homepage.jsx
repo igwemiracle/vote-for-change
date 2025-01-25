@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { heroData } from '../constant';
+import { events, heroData } from '../constant';
 import ElectionDetails from '../components/ElectionDetails';
 import CardContainer from '../components/CardComponent/CardContainer';
+import Timeline from '../components/TimelineComponent';
 
 const Homepage = () => {
   const [current, setCurrent] = useState(0);
@@ -18,7 +19,6 @@ const Homepage = () => {
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
       <div className="relative h-screen w-full overflow-hidden">
-
         <div className="absolute inset-0 z-0">
           {heroData.map((item, index) => (
             <div key={item.id} className={`absolute w-full h-full transition-opacity duration-1000 
@@ -28,9 +28,7 @@ const Homepage = () => {
                 alt={item.name}
                 className="w-full h-full object-cover"
               />
-              <div
-                className="absolute inset-0 bg-[#2D3F51] bg-opacity-70"
-              ></div>
+              <div className="absolute inset-0 bg-[#2D3F51] bg-opacity-70"></div>
             </div>
           ))}
         </div>
@@ -41,9 +39,7 @@ const Homepage = () => {
           </h1>
 
           <p className="xs:text-lg lg:text-2xl leading-9 mb-6">{heroData[current].description}</p>
-          {/* <button className="bg-[#AF4D32] hover:bg-[#a0442a] px-6 py-3 rounded text-lg shadow-lg"> */}
           <button className="border border-solid border-white rounded-[60px] hover:border-0 hover:bg-[#a0442a] active:bg-[#a0442a] px-9 py-3 text-lg shadow-lg">
-
             Learn More
           </button>
         </div>
@@ -52,8 +48,11 @@ const Homepage = () => {
       <CardContainer />
       {/* Election Details Section */}
       <ElectionDetails />
+      {/* TimeLine */}
+      <Timeline events={events} className={`bg-[#CCCCCC]`} />
     </div>
   );
 };
+
 
 export default Homepage;

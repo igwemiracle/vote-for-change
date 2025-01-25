@@ -6,7 +6,6 @@ import CandidateList from './pages/CandidateList';
 import CandidateProfile from './pages/CandidateProfile';
 import VotingPage from './pages/VotingPage';
 import ConfirmationPage from './pages/ConfirmationPage';
-import SignUpPage from './pages/SignUpPage';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './layouts/Navbar'
@@ -30,8 +29,7 @@ const PageRoutes = () => {
       <Route path="/" element={<Homepage />} />
       <Route path="/candidates" element={<CandidateList />} />
       <Route path="/candidates/:id" element={<CandidateProfile />} />
-      <Route path="/signup" element={<SignUpPage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/signin" element={<LoginPage />} />
       <Route
         path="/vote"
         element={

@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+hold4me
 dist
 dist-ssr
 *.local
