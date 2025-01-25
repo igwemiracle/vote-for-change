@@ -41,7 +41,9 @@ const Homepage = () => {
           </h1>
 
           <p className="xs:text-lg lg:text-2xl leading-9 mb-6">{heroData[current].description}</p>
-          <button className="bg-[#AF4D32] hover:bg-[#a0442a] px-6 py-3 rounded text-lg shadow-lg">
+          {/* <button className="bg-[#AF4D32] hover:bg-[#a0442a] px-6 py-3 rounded text-lg shadow-lg"> */}
+          <button className="border border-solid border-[#a0442a] rounded-[60px] hover:bg-[#a0442a] active:bg-[#a0442a] px-9 py-3 text-lg shadow-lg">
+
             Learn More
           </button>
         </div>

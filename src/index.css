@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
 @layer components {
   .nav-links {
     @apply block text-white text-center px-4 py-3 lg:text-lg hover:bg-[#a0442a] active:hover:bg-[#a0442a] active:text-white

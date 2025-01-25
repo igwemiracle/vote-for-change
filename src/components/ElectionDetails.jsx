@@ -43,7 +43,7 @@ export default function ElectionDetails() {
         <div className="mt-16">
           <h3 className="text-3xl font-bold text-gray-800 text-center mb-8">Election Details</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 xs:p-4 lg:p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-semibold mb-4 text-gray-800">Eligibility & Guidelines</h4>
               <ul className="list-disc list-inside text-gray-700 space-y-3">
                 <li>
@@ -57,7 +57,7 @@ export default function ElectionDetails() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 xs:p-4 lg:p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-semibold mb-4 text-gray-800">Important Dates & Info</h4>
               <ul className="list-disc list-inside text-gray-700 space-y-3">
                 <li>
