@@ -4,26 +4,48 @@ import { images } from "../assets/images";
 const Navbar = () => {
   return (
     <>
-      {/* Header Section */}
-      <div className='flex flex-wrap gap-6 justify-center py-4 items-center mx-auto bg-[#2D3F51]'>
-        <img className='xs:w-[95px] xs:h-[95px] lg:w-[170px] lg:h-[170px]' src={images.bsulogo} alt="logo" />
-        <div className="flex flex-col gap-4 text-center">
-          <h1 className="text-2xl font-bold text-white lg:text-[60px] lg:leading-[4.5rem] ss:text-[26px]">Welcome to Student Elections 2025</h1>
-          <p className="text-white lg:text-[20px] ss:text-[10px] ">
-            Participate in shaping the future by voting for your student leaders!
+      {/*  Header Section */}
+      <header
+        className="bg-[#AF4D32] text-white lg:py-6 w-full flex items-center gap-4
+        xs:mb-[-25px] xs:py-4 lg:mb-[-40px]"
+      >
+        <img className='xs:w-[100px] xs:h-[100px] lg:w-[170px] lg:h-[170px]' src={images.bsulogo} alt="logo" />
+        <div className="container mx-auto text-left mb-1">
+          <h1 className="xs:text-[20px] sm:text-[30px] lg:text-[50px] font-bold lg:mb-4  ">Benue State University, Makurdi.</h1>
+          {/* <p className="text-lg">Your one-stop solution for managing elections, candidates, and voting with ease.</p> */}
+          <p className="xs:text-[15px] sm:text-[20px] lg:text-[25px] font-cookie">
+            Welcomes you to her Student election 2025.
           </p>
         </div>
-      </div>
+      </header>
 
-      <div className="flex justify-center items-center gap-4 sticky top-0 overflow-hidden bg-[#AF4D32] z-[9999] shadow-md">
-        <Link to={`/`} className="nav-links">Home</Link>
-        <div className='text-white'>/</div>
-        <Link to={`/candidates`} className="nav-links">Candidates</Link>
-        <div className='text-white'>/</div>
-        <Link to={`/vote`} className="nav-links">Vote</Link>
-      </div>
+      {/*  Navigation Section */}
+      <nav
+        className="sticky top-0 bg-[#2D3F51] text-white shadow-md z-50 
+        xs:mb-4 sm:mb-2 xs:w-[70%]  lg:w-[50%] clip-path-diagonal ml-auto"
+        style={{ clipPath: "polygon(100% 0, 100% 100%, 0% 100%, 5% 0%)" }}
+      >
+        <div className="container
+         xs:text-[10px] sm:text-[12px] lg:text-[16px] xs:pl-7  xs:py-3 xs:gap-2 mx-auto flex items-center lg:gap-6 lg:py-4 lg:pl-28">
+          <Link to={`/`}>Home</Link>
+          <div className='text-white'>/</div>
+          <Link to={`/candidates`}>Candidates</Link>
+          <div className='text-white'>/</div>
+          <Link to={`/vote`}>Vote</Link>
+        </div>
+      </nav>
     </>
+
+
+
+
+
   );
 };
 
+
 export default Navbar;
+
+
+
+

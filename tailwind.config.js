@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cookie: ['Cookie', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        lobster: ['Lobster', 'sans-serif'],
+      },
       screens: {
         xs: '303px',
       },

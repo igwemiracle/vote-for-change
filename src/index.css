@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,5 +18,11 @@
   }
   .Header1 {
     @apply ss:text-[26px] ss:leading-[35px] sm:text-[50px] sm:leading-[70px] lg:text-[69px] lg:leading-[80px] font-semibold;
+  }
+
+  .cookie-regular {
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 }

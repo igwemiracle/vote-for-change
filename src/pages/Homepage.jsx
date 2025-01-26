@@ -16,7 +16,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 -mt-8">
       {/* Hero Section */}
       <div className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -33,14 +33,14 @@ const Homepage = () => {
           ))}
         </div>
         {/* Overlay Text */}
-        <div className="flex flex-col items-center justify-center text-center text-white absolute inset-0 bg-opacity-50 z-10">
+        <div className="flex flex-col items-center justify-center text-white absolute inset-0 bg-opacity-50 z-10">
           <h1 className="lg:text-6xl font-extrabold mb-4 xs:text-3xl lg:leading-[70px] text-shadow-md">
             {heroData[current].slogan}
           </h1>
 
           <p className="xs:text-lg lg:text-2xl leading-9 mb-6">{heroData[current].description}</p>
           <button className="border border-solid border-white rounded-[60px] hover:border-0 hover:bg-[#a0442a] active:bg-[#a0442a] px-9 py-3 text-lg shadow-lg">
-            Learn More
+            Get Started
           </button>
         </div>
       </div>
@@ -49,7 +49,7 @@ const Homepage = () => {
       {/* Election Details Section */}
       <ElectionDetails />
       {/* TimeLine */}
-      <Timeline events={events} className={`bg-[#CCCCCC]`} />
+      <Timeline events={events} />
     </div>
   );
 };
