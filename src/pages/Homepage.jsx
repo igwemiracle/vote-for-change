@@ -33,7 +33,7 @@ const Homepage = () => {
           ))}
         </div>
         {/* Overlay Text */}
-        <div className="flex flex-col items-center justify-center text-white absolute inset-0 bg-opacity-50 z-10">
+        <div className="flex flex-col items-center justify-center text-center text-white absolute inset-0 bg-opacity-50 z-10">
           <h1 className="lg:text-6xl font-extrabold mb-4 xs:text-3xl lg:leading-[70px] text-shadow-md">
             {heroData[current].slogan}
           </h1>
