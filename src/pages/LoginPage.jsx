@@ -9,6 +9,12 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
+    // Check if email field is empty
+    if (!email.trim()) {
+      setError('The email address must not be empty.');
+      return;
+    }
+
     // Check if the email exists in the database
     const user = Database.find((entry) => entry.email === email);
 
@@ -23,35 +29,47 @@ const LoginPage = () => {
     }
   };
 
+
   return (
-    <>
-      <div className='flex lg:flex-row xs:flex-col  w-[80%] mx-auto mb-8 items-center bg-[#E8C9C1] shadow-xl rounded-lg'>
-        <img className='basis-1/2 w-full' src={images.login} alt="show-login" />
-        <div className='basis-1/2 w-full px-8 py-12'>
-          <input
-            required
+    <div className='flex lg:flex-row xs:flex-col w-[80%] mx-auto xs:mb-6 xs:mt-0 lg:my-10 items-center bg-[#E8C9C1] shadow-xl rounded-lg'>
+      <img className='basis-1/2 w-full' src={images.login} alt="show-login" />
+      <div className='basis-1/2 w-full px-3 sm:px-6 py-12'>
+
+        {error ?
+          <>
+            <input
+
+              type="email"
+              placeholder="Enter your email..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className=" w-full xs:pl-4 xs:py-3 sm:px-8 sm:py-4 border-[2px] border-solid border-red-600 outline-none
+              focus:border-red-500"
+            />
+            <p className="text-red-500 mt-1 xs:text-[15px]">{error}</p>
+          </>
+          : <input
+
             type="email"
             placeholder="Enter your email..."
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className=" w-full px-8 py-4 border rounded-[60px] mb-8 focus:outline-none"
-          />
+            className=" w-full xs:pl-4 xs:py-3 sm:px-8 sm:py-4 border border-solid border-[#AF4D32]
+          focus:border-[2px] focus:border-[#e76241] outline-none"
+          />}
 
-          <button
-            onClick={handleLogin}
-            className="w-full bg-[#AF4D32] text-white py-4 rounded-[60px]"
-          >
-            Login
-          </button>
-          {error && <p className="text-red-500 mt-6 text-center">{error}</p>}
 
-        </div>
+        <button
+          onClick={handleLogin}
+          className="w-full bg-[#AF4D32] mt-6 text-white xs:py-3 sm:px-8 sm:py-4 outline-none
+           focus:border-[3px]  focus:border-[#fcb6a4] focus:rounded-[4px] rounded-sm"
+
+        >
+          Login
+        </button>
+
       </div>
-
-      <footer>
-
-      </footer>
-    </>
+    </div>
   );
 };
 

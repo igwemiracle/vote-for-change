@@ -16,9 +16,13 @@ import Footer from './layouts/Footer';
 
 const App = () => (
   <Router>
-    <Navbar />
-    <PageRoutes />
-    <Footer />
+    <div className='flex flex-col min-h-screen'>
+      <Navbar />
+      <div className='flex-grow'>
+        <PageRoutes />
+      </div>
+      <Footer />
+    </div>
   </Router>
 );
 
