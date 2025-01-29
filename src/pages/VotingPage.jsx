@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const candidates = [
   { id: 1, name: 'Comr Shie Paul' },
   { id: 2, name: 'Comr John Tarka' },
+  { id: 3, name: 'Comr James Akombo' },
 ];
 
 const VotingPage = () => {
@@ -35,7 +36,7 @@ const VotingPage = () => {
 
   return (
     <div>
-      <div className="container mx-auto p-6">
+      <div className="container mx-auto p-6 my-32">
         <h2 className="text-2xl font-bold mb-4">Cast Your Vote</h2>
         {message && (
           <p className={`mb-4 ${hasVoted ? 'text-red-500' : 'text-green-500'}`}>

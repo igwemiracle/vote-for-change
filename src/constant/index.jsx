@@ -81,6 +81,61 @@ export const events = [
   },
 ];
 
+export const candidate = [
+  {
+    id: 1,
+    name: "Comr Shie Paul",
+    bio: "Experienced leader with a strong track record in student governance and advocacy.",
+    manifesto: "Promising better education opportunities, enhanced student welfare, and inclusivity.",
+    photo: images.buhari,
+    achievements: [
+      "Organized the annual Student Leadership Summit.",
+      "Introduced a mentorship program for freshmen.",
+      "Secured funding for campus-wide events.",
+    ],
+    timeline: [
+      { year: "2021", event: "Elected as Class Representative" },
+      { year: "2022", event: "Became Vice President of SU" },
+      { year: "2023", event: "Led a campus-wide sustainability campaign" },
+    ]
+  },
+  {
+    id: 1,
+    name: "Comr John Tarka",
+    bio: "Dedicated organizer committed to fostering unity and promoting innovative student programs.",
+    manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
+    photo: images.jona,
+    achievements: [
+      "Launched a successful food drive for underprivileged students.",
+      "Initiated tech training workshops for students.",
+      "Coordinated inter-departmental sports events.",
+    ],
+    timeline: [
+      { year: "2020", event: "Became Head of Sports Committee" },
+      { year: "2021", event: "Elected as SU Sports Director" },
+      { year: "2023", event: "Introduced campus-wide tech training" },
+    ]
+  },
+  {
+    id: 3,
+    name: "Comr James Akombo",
+    bio: "Dedicated organizer committed to fostering unity and promoting innovative student programs.",
+    manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
+    photo: images.tini,
+    achievements: [
+      "Launched a successful food drive for underprivileged students.",
+      "Initiated tech training workshops for students.",
+      "Coordinated inter-departmental sports events.",
+    ],
+    timeline: [
+      { year: "2020", event: "Became Head of Sports Committee" },
+      { year: "2021", event: "Elected as SU Sports Director" },
+      { year: "2023", event: "Introduced campus-wide tech training" },
+    ],
+  }
+]
+
+
 
 export const Database = [
   {
