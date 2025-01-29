@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { images } from '../assets/images';
+import { candidate as candidates } from '../constant';
 
-const candidates = [
-  { id: 1, name: 'Comr Shie Paul', image: images.buhari },
-  { id: 2, name: 'Comr John Tarka', image: images.jona },
-  { id: 3, name: 'Comr John Tarka', image: images.tini },
-];
 
 const CandidateList = () => {
   return (
@@ -18,7 +13,7 @@ const CandidateList = () => {
           <div key={candidate.id} className="bg-white rounded-lg shadow-md p-4 text-center">
             {/* Candidate Image */}
             <img
-              src={candidate.image}
+              src={candidate.photo}
               alt={candidate.name}
               className="w-32 h-32 mx-auto rounded-full object-cover border-2 border-gray-300"
             />

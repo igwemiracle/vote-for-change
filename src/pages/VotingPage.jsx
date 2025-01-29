@@ -27,7 +27,6 @@ const VotingPage = () => {
       // Mark the user as having voted
       localStorage.setItem('hasVoted', 'true');
       localStorage.setItem('votedCandidate', selected);
-      setMessage('Your vote has been successfully cast!');
       setTimeout(() => {
         navigate('/confirmation');
       }, 2000); // Redirect after 2 seconds
@@ -35,49 +34,63 @@ const VotingPage = () => {
   };
 
   return (
-    <div>
-      <div className="container mx-auto p-6 my-32">
-        <h2 className="text-2xl font-bold mb-4">Cast Your Vote</h2>
-        {message && (
-          <p className={`mb-4 ${hasVoted ? 'text-red-500' : 'text-green-500'}`}>
-            {message}
-          </p>
-        )}
-        {!hasVoted ? (
-          <>
-            <ul className="space-y-4">
-              {candidates.map((candidate) => (
-                <li key={candidate.id} className="border p-4 rounded-md">
-                  <label>
-                    <input
-                      type="radio"
-                      name="candidate"
-                      value={candidate.id}
-                      onChange={() => setSelected(candidate.id)}
-                      className="mr-2"
-                    />
-                    {candidate.name}
-                  </label>
-                </li>
-              ))}
-            </ul>
-            <button
-              onClick={handleSubmit}
-              className="bg-blue-600 text-white px-4 py-2 mt-6 rounded hover:bg-blue-700"
-              disabled={!selected}
-            >
-              Submit Vote
-            </button>
-          </>
-        ) : (
-          <button
-            onClick={() => navigate('/')}
-            className="bg-gray-600 text-white px-4 py-2 mt-6 rounded hover:bg-gray-700"
+    <div className="relative">
+      {/* Message display when already voted */}
+      {hasVoted && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50"
+        >
+          <div
+            className="p-6 max-w-md w-full bg-white rounded-lg shadow-lg text-center mx-4 sm:mx-auto sm:w-1/2 md:w-1/3"
           >
-            Go Back to Homepage
+            <div className="mb-4">
+              <img
+                src="https://img.icons8.com/ios/452/error.png"
+                alt="Already Voted"
+                className="h-16 w-16 mx-auto"
+              />
+            </div>
+            <p className="text-xl font-medium text-[#2D3F51]">{message}</p>
+            <button
+              onClick={() => navigate('/')}
+              className="mt-6 bg-[#2D3F51] text-white px-6 py-3 rounded-lg hover:bg-[#2A353E] focus:outline-none"
+            >
+              Go Back to Homepage
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Voting Form */}
+      {!hasVoted && (
+        <div className="container mx-auto p-6 my-32">
+          <h2 className="text-2xl font-bold mb-4 text-[#2D3F51]">Cast Your Vote</h2>
+          <ul className="space-y-4">
+            {candidates.map((candidate) => (
+              <li key={candidate.id} className="border p-4 rounded-md">
+                <label>
+                  <input
+                    type="radio"
+                    name="candidate"
+                    value={candidate.id}
+                    onChange={() => setSelected(candidate.id)}
+                    checked={selected === candidate.id}
+                    className="mr-2"
+                  />
+                  {candidate.name}
+                </label>
+              </li>
+            ))}
+          </ul>
+          <button
+            onClick={handleSubmit}
+            className="bg-[#2D3F51] text-white px-4 py-2 mt-6 rounded hover:bg-[#2A353E]"
+            disabled={!selected}
+          >
+            Submit Vote
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
