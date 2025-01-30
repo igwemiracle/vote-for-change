@@ -12,7 +12,7 @@ export default {
         lobster: ['Lobster', 'sans-serif'],
       },
       screens: {
-        xs: '375px',
+        xs: '303px',
       },
     },
   },
