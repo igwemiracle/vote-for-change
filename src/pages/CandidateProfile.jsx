@@ -15,9 +15,9 @@ const CandidateProfile = () => {
   }
 
   return (
-    <div className="relative text-white py-16">
+    <div className="relative text-white">
       {/* Profile Header */}
-      <div className="relative text-[#2D3F51] py-16">
+      <div className="relative text-[#2D3F51] py-6">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <img
             src={candidate.photo}
