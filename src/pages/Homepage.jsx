@@ -1,19 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { events, heroData } from '../constant';
 import ElectionDetails from '../components/ElectionDetails';
 import CardContainer from '../components/CardComponent/CardContainer';
 import Timeline from '../components/TimelineComponent';
+import { Link } from 'react-router-dom';
+import HowToVote from '../components/HowToVote';
 
 const Homepage = () => {
   const [current, setCurrent] = useState(0);
+  const ElectionDetailsRef = useRef(null);
 
-  // Auto-slide effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % heroData.length);
-    }, 5000); // Change slides every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  // Function to scroll down to ElectionDetails
+  const scrollToElectionDetails = () => {
+    ElectionDetailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 -mt-8">
@@ -33,24 +40,29 @@ const Homepage = () => {
           ))}
         </div>
         {/* Overlay Text */}
-        <div className="flex flex-col items-center justify-center text-center text-white absolute inset-0 bg-opacity-50 z-10">
+        <div className="xs:w-[90%] mx-auto
+         flex flex-col items-center justify-center text-center text-white absolute inset-0 bg-opacity-50 z-10">
           <h1 className="lg:text-6xl font-extrabold mb-4 xs:text-3xl lg:leading-[70px] text-shadow-md">
             {heroData[current].slogan}
           </h1>
 
           <p className="xs:text-lg lg:text-2xl leading-9 mb-6">{heroData[current].description}</p>
-          <button className="border border-solid border-white rounded-[60px] hover:border-0 hover:bg-[#a0442a] active:bg-[#a0442a] px-9 py-3 text-lg shadow-lg">
+          <Link to={'/vote'} className="border border-solid border-white rounded-[60px] hover:border-0 hover:bg-[#a0442a] active:bg-[#a0442a] px-9 py-3 text-lg shadow-lg">
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
-      {/* Cards Section */}
-      <CardContainer />
+      {/* Cards Section (Pass Scroll Function) */}
+      <CardContainer scrollToElectionDetails={scrollToElectionDetails} />
+      {/* How to Vote Section */}
+      <HowToVote />
       {/* Election Details Section */}
-      <ElectionDetails />
+      <div ref={ElectionDetailsRef}>
+        <ElectionDetails />
+      </div>
       {/* TimeLine */}
       <Timeline events={events} />
-    </div>
+    </div >
   );
 };
 

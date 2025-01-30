@@ -3,7 +3,7 @@ import React from "react";
 // Timeline Component
 const Timeline = ({ events, className }) => {
   return (
-    <div className={`min-h-screen py-6 flex flex-col justify-center sm:py-12 ${className}`}>
+    <div className={`w-[90%] mx-auto min-h-screen py-6 flex flex-col justify-center sm:py-12 ${className}`}>
       <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
         <div className="relative text-gray-700 antialiased text-sm font-semibold">
           {/* Vertical bar running through middle */}
