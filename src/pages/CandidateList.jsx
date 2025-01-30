@@ -6,7 +6,7 @@ import { candidate as candidates } from '../constant';
 const CandidateList = () => {
   return (
     <div className="container mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-6">Meet the Candidates</h2>
+      <h2 className="sm:text-3xl text-2xl font-bold text-center mb-6 text-[#2D3F51]">Meet the Candidates</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {candidates.map((candidate) => (

@@ -31,7 +31,7 @@ const LoginPage = () => {
 
 
   return (
-    <div className='flex lg:flex-row xs:flex-col w-[80%] mx-auto my-[4.4rem] items-center bg-[#E8C9C1] shadow-xl'>
+    <div className='flex lg:flex-row xs:flex-col w-[80%] mx-auto my-[4.4rem] lg:my-[9rem] items-center bg-[#E8C9C1] shadow-xl'>
       <img className='basis-1/2 w-full' src={images.login} alt="show-login" />
       <div className='basis-1/2 w-full px-3 xs:h-[16rem] xs:py-14 sm:px-6 sm:py-32  sm:h-[28rem] pt-10'>
 

@@ -25,7 +25,7 @@ const CandidateProfile = () => {
             className="w-40 h-40 rounded-full shadow-lg mb-4 md:mb-0"
           />
           <div className="ml-6 text-center md:text-left">
-            <h1 className="text-4xl font-bold">{candidate.name}</h1>
+            <h1 className="sm:text-4xl text-3xl font-bold">{candidate.name}</h1>
             <p className="text-lg mt-2">{candidate.bio}</p>
           </div>
         </div>
