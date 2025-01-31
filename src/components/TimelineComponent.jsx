@@ -1,11 +1,15 @@
 import React from "react";
+import { images } from "../assets/images";
 
 
 const Timeline = ({ events }) => {
   return (
     <div className="flex flex-col justify-center my-8 py-2 bg-[#2D3F51] bg-opacity-50 relative">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('/Users/apple/Desktop/BSU_PROJECT/src/assets/images/studentsVoting.png')] bg-cover bg-center opacity-30"></div>
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: `url(${images.studentsVoting})` }}
+      ></div>
 
       {/* Content */}
       <div className="relative py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
