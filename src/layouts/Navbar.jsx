@@ -6,17 +6,19 @@ const Navbar = () => {
     <>
       {/*  Header Section */}
       <header
-        className="bg-[#AF4D32] text-white lg:py-6 w-full flex gap-4 xs:mb-[-25px] xs:py-4 lg:mb-[-40px]">
-        <Link className="xs:w-[110px] xs:h-[110px] lg:w-[170px] lg:h-[170px]" to={"/"}>
-          <img className='' src={images.bsulogo} alt="logo" />
-        </Link>
-        <div className="container mx-auto text-left mb-1">
-          <h1 className="xs:text-[22px] sm:text-[30px] lg:text-[50px] font-bold lg:mb-4 ">
-            Benue State University, Makurdi.
-          </h1>
-          <p className="xs:text-[15px] sm:text-[20px] lg:text-[25px] font-cookie">
-            Welcomes you to her Student election 2025.
-          </p>
+        className="bg-[#AF4D32] text-white lg:py-6 w-full  xs:mb-[-25px]  lg:mb-[-40px]">
+        <div className="flex gap-2 w-[90%] mx-auto">
+          <Link className="xs:w-[120px] xs:h-[120px] lg:w-[170px] lg:h-[170px]" to={"/"}>
+            <img src={images.bsulogo} alt="logo" />
+          </Link>
+          <div className="container mx-auto text-left mt-3">
+            <h1 className="xs:text-[20px] sm:text-[30px] lg:text-[50px] font-bold lg:mb-4 ">
+              Benue State University, Makurdi.
+            </h1>
+            <p className="xs:text-[12px] sm:text-[20px] lg:text-[25px] font-cookie">
+              Welcomes you to her Student election 2025.
+            </p>
+          </div>
         </div>
       </header>
 
@@ -36,11 +38,6 @@ const Navbar = () => {
         </ul>
       </nav>
     </>
-
-
-
-
-
   );
 };
 
