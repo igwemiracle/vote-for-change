@@ -7,6 +7,10 @@ import details from './details.png'
 import candidates from './candidates.png'
 import bsulogo from './bsulogo.png'
 import login from './login.png'
+import studentsVoting from './studentsVoting.png'
+import flag from './flag.png'
+
+
 export const images = {
-  tini, buhari, jona, voting1, vote1, details, candidates, bsulogo,login
+  tini, buhari, jona, voting1, vote1, details, candidates, bsulogo, login, studentsVoting, flag
 }

@@ -100,7 +100,7 @@ export const candidate = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     name: "Comr John Tarka",
     bio: "Dedicated organizer committed to fostering unity and promoting innovative student programs.",
     manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",

@@ -6,7 +6,7 @@ const HowToVote = () => {
     <div className="mx-auto text-center mt-12 w-[90%]">
       <h3 className="text-3xl font-bold text-gray-800 mb-6">How to Vote</h3>
       <div className="flex flex-col md:flex-row items-start justify-between gap-10">
-        <div className="flex-1">
+        <div className="flex-1 mx-auto w-full">
           <img
             src={images.voting1}
             alt="Voting Process Illustration"

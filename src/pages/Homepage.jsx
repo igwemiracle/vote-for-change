@@ -40,14 +40,17 @@ const Homepage = () => {
           ))}
         </div>
         {/* Overlay Text */}
-        <div className="w-[90%] mx-auto text-white absolute inset-0 bg-opacity-50 z-10
-         flex flex-col justify-center">
-          <h1 className="lg:text-6xl font-extrabold mb-4 xs:leading-[3rem] xs:text-4xl">
+        <div className="w-[90%] mx-auto text-white absolute inset-0 bg-opacity-50 z-10 flex flex-col justify-center sm:items-center sm:text-center
+         ">
+          <h1 className="sm:text-7xl sm:leading-[5.5rem] font-extrabold xs:leading-[3rem] xs:text-4xl">
             {heroData[current].slogan}
           </h1>
-
-          <p className="xs:text-2xl lg:text-2xl leading-9 mb-6 font-normal">{heroData[current].description}</p>
-          <Link to={'/vote'} className="border border-solid border-white rounded-[60px] hover:border-0 hover:bg-[#a0442a]  py-3 text-center xs:w-40 text-lg shadow-lg">
+          <p className="xs:text-2xl sm:text-5xl leading-[4rem] sm:leading-[4.5rem] mb-8 sm:mb-[4rem] font-normal">
+            {heroData[current].description}
+          </p>
+          <Link
+            to={'/vote'}
+            className="border border-solid border-white rounded-[60px] hover:border-0 py-3 text-center  text-lg shadow-lg w-40 sm:w-[10.6rem] hover:-translate-y-1 hover:bg-[#AF4D32] hover:text-white h transition duration-300">
             Get Started
           </Link>
         </div>
