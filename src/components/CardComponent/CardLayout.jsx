@@ -10,7 +10,7 @@ const CardLayout = ({ title, description, icon, buttonText, link, scrollToElecti
 
   return (
     <div
-      className="bg-[#AF4D32] rounded-lg shadow-lg p-6 w-64 flex flex-col items-center justify-between text-center
+      className="bg-[#AF4D32] rounded-lg shadow-lg p-6 w-80 flex flex-col items-center text-center
       transition duration-300 hover:shadow-xl hover:-translate-y-4"
     >
 

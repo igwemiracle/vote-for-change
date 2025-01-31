@@ -1,33 +1,39 @@
 import React from "react";
 
-// Timeline Component
-const Timeline = ({ events, className }) => {
+const Timeline = ({ events }) => {
   return (
-    <div className={`w-[90%] mx-auto min-h-screen py-6 flex flex-col justify-center sm:py-12 ${className}`}>
+    <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12">
       <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
-        <div className="relative text-gray-700 antialiased text-sm font-semibold">
-          {/* Vertical bar running through middle */}
-          <div className="hidden sm:block w-1 bg-[#e26d4d] absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
-          {/* Loop through events data */}
+        <div className="relative text-gray-700 antialiased text-sm font-semibold">
+
+          {/* Vertical Bar */}
+          <div className="hidden sm:block w-1 bg-[#AF4D32] absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+          {/* Timeline Events */}
           {events.map((event, index) => (
             <div key={event.id} className="mt-6 sm:mt-0 sm:mb-12">
-              <div className={`flex flex-col sm:flex-row items-center ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                <div className={`flex justify-${index % 2 === 0 ? 'start' : 'end'} w-full mx-auto items-center`}>
-                  <div className={`w-full sm:w-1/2 ${index % 2 === 0 ? 'sm:pr-8' : 'sm:pl-8'}`}>
+              <div className="flex flex-col sm:flex-row items-center">
+
+                {/* Left & Right Alternating Content */}
+                <div className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"} w-full mx-auto items-center`}>
+                  <div className={`w-full sm:w-1/2 ${index % 2 === 0 ? "sm:pr-8" : "sm:pl-8"}`}>
                     <div className="p-4 bg-white rounded shadow">
-                      <h3 className="text-3xl font-bold text-gray-800 mb-6">{event.title}</h3>
-                      {event.description}
+                      <h3 className="text-lg font-bold text-gray-800">{event.title}</h3>
+                      <p className="text-gray-600">{event.description}</p>
                     </div>
                   </div>
                 </div>
-                {/* Replace icon with a numbered circle */}
-                <div className="rounded-full bg-[#AF4D32] border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                  <span className="text-white font-bold">{index + 1}</span>
+
+                {/* Circle Indicator */}
+                <div className="rounded-full bg-[#AF4D32] border-white border-4 w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-white font-bold">
+                  {index + 1}
                 </div>
+
               </div>
             </div>
           ))}
+
         </div>
       </div>
     </div>

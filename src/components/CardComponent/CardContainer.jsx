@@ -6,7 +6,8 @@ import { cardData } from "../../constant";
 const CardContainer = ({ scrollToElectionDetails }) => {
   return (
     <div
-      className="relative -mt-20 z-20 flex lg:flex-row gap-6 justify-center flex-wrap items-center"
+      className="relative -mt-20 z-20 flex justify-center gap-4 flex-wrap
+      "
     >
       {cardData.map((card) => (
         <CardLayout
