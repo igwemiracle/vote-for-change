@@ -6,7 +6,7 @@ const CandidateList = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center text-[#2D3F51] mb-8">
+        <h2 className="text-2xl sm:text-4xl font-bold text-center text-dark-gray mb-8">
           Meet the Candidates
         </h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -33,7 +33,7 @@ const CandidateList = () => {
                   {candidate.shortBio || "Dedicated candidate with a vision for the future."}
                 </p>
                 <Link to={`/candidates/${candidate.id}`}>
-                  <button className="w-full px-4 py-2 bg-[#AF4D32] text-white rounded-md hover:bg-[#8F3D28] transition">
+                  <button className="w-full px-4 py-2 bg-dark-brown text-white rounded-md hover:bg-[#8F3D28] transition">
                     View Profile
                   </button>
                 </Link>

@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { events, heroData } from '../constant';
 import ElectionDetails from '../components/ElectionDetails';
 import CardContainer from '../components/CardComponent/CardContainer';
+import HowToVote from '../components/HowToVote';
 import Timeline from '../components/TimelineComponent';
 import { Link } from 'react-router-dom';
-import HowToVote from '../components/HowToVote';
 
 const Homepage = () => {
   const [current, setCurrent] = useState(0);
@@ -35,7 +35,7 @@ const Homepage = () => {
                 alt={item.name}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-[#2D3F51] bg-opacity-70"></div>
+              <div className="absolute inset-0 bg-dark-gray bg-opacity-70"></div>
             </div>
           ))}
         </div>
@@ -50,7 +50,7 @@ const Homepage = () => {
           </p>
           <Link
             to={'/vote'}
-            className="border border-solid border-white rounded-[60px] hover:border-0 py-3 text-center  text-lg shadow-lg w-40 sm:w-[10.6rem] hover:-translate-y-1 hover:bg-[#AF4D32] hover:text-white h transition duration-300">
+            className="border border-solid border-white rounded-[60px] hover:border-0 py-3 text-center  text-lg shadow-lg w-40 sm:w-[10.6rem] hover:-translate-y-1 hover:bg-dark-brown hover:text-white h transition duration-300">
             Get Started
           </Link>
         </div>

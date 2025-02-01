@@ -17,7 +17,7 @@ const CandidateProfile = () => {
   return (
     <div className="relative text-white">
       {/* Profile Header */}
-      <div className="relative text-[#2D3F51] py-6">
+      <div className="relative text-dark-gray py-6">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <img
             src={candidate.photo}
@@ -35,13 +35,13 @@ const CandidateProfile = () => {
       <div className="container mx-auto p-6">
         {/* Manifesto Section */}
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-[#2D3F51]">Manifesto</h2>
+          <h2 className="text-2xl font-bold mb-4 text-dark-gray">Manifesto</h2>
           <p className="text-gray-700">{candidate.manifesto}</p>
         </div>
 
         {/* Achievements Section */}
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-[#2D3F51]">Achievements</h2>
+          <h2 className="text-2xl font-bold mb-4 text-dark-gray">Achievements</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             {candidate.achievements.map((achievement, index) => (
               <li key={index}>{achievement}</li>
@@ -51,12 +51,12 @@ const CandidateProfile = () => {
 
         {/* Timeline Section */}
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-[#2D3F51]">Timeline</h2>
-          <ol className="border-l border-[#AF4D32] pl-4">
+          <h2 className="text-2xl font-bold mb-4 text-dark-gray">Timeline</h2>
+          <ol className="border-l border-dark-brown pl-4">
             {candidate.timeline.map((entry, index) => (
               <li key={index} className="mb-4">
                 <div className="flex items-center mb-1">
-                  <div className="bg-[#AF4D32] w-4 h-4 rounded-full border-2 border-white"></div>
+                  <div className="bg-dark-brown w-4 h-4 rounded-full border-2 border-white"></div>
                   <span className="ml-4 text-gray-600 text-lg font-semibold">{entry.year}</span>
                 </div>
                 <p className="ml-8 text-gray-600">{entry.event}</p>
@@ -69,7 +69,7 @@ const CandidateProfile = () => {
         <div className="text-center">
           <Link
             to="/candidates"
-            className="bg-[#AF4D32] text-white py-2 px-6 rounded-lg shadow hover:bg-[#93412a] transition"
+            className="bg-dark-brown text-white py-2 px-6 rounded-lg shadow hover:bg-[#93412a] transition"
           >
             Back to Candidates
           </Link>

@@ -4,7 +4,7 @@ import { images } from "../assets/images";
 
 const Timeline = ({ events }) => {
   return (
-    <div className="flex flex-col justify-center my-8 py-2 bg-[#2D3F51] bg-opacity-50 relative">
+    <div className="flex flex-col justify-center my-8 py-2 bg-[rgba(22,23,67,0.92)] bg-opacity-50 relative">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -15,7 +15,7 @@ const Timeline = ({ events }) => {
       <div className="relative py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
         <div className="relative text-gray-700 antialiased text-sm font-semibold">
           {/* Vertical Bar */}
-          <div className="hidden sm:block w-1 bg-[#AF4D32] absolute h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className="hidden sm:block w-1 bg-dark-brown absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
           {/* Timeline Events */}
           {events.map((event, index) => (
@@ -32,7 +32,7 @@ const Timeline = ({ events }) => {
                 </div>
 
                 {/* Circle Indicator */}
-                <div className="rounded-full bg-[#AF4D32] border-white border-4 w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-white font-bold">
+                <div className="rounded-full bg-dark-brown border-white border-4 w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-white font-bold">
                   {index + 1}
                 </div>
               </div>

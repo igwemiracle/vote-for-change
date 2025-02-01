@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2D3F51] text-gray-200 py-8">
+    <footer className="bg-dark-gray text-gray-200 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Footer Container */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -19,13 +19,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-[#AF4D32] hover:text-gray-200 transition duration-300">Home</Link>
+                <Link to="/" className="text-dark-brown hover:text-gray-200 transition duration-300">Home</Link>
               </li>
               <li>
-                <Link to="/candidates" className="text-[#AF4D32] hover:text-gray-200 transition duration-300">Candidates</Link>
+                <Link to="/candidates" className="text-dark-brown hover:text-gray-200 transition duration-300">Candidates</Link>
               </li>
               <li>
-                <Link to="/vote" className="text-[#AF4D32] hover:text-gray-200 transition duration-300">Vote now</Link>
+                <Link to="/vote" className="text-dark-brown hover:text-gray-200 transition duration-300">Vote now</Link>
               </li>
 
             </ul>

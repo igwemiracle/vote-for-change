@@ -7,9 +7,8 @@ const CardLayout = ({ title, description, icon, buttonText, link, scrollToElecti
       scrollToElectionDetails(); // 👈 Scroll only for "Election Details"
     }
   };
-  // hover: -translate - y - 4
   return (
-    <div className="bg-[#AF4D32] rounded-lg shadow-lg p-6 lg:w-80 text-center transition duration-300 hover:shadow-xl 
+    <div className="bg-dark-brown rounded-lg shadow-lg p-6 lg:w-80 text-center transition duration-300 hover:shadow-xl 
   xs:w-64"
     >
 
@@ -28,16 +27,18 @@ const CardLayout = ({ title, description, icon, buttonText, link, scrollToElecti
       {title === "Election Details" ? (
         <button
           onClick={handleClick}
-          className="text-[#AF4D32] rounded-[60px] py-2 text-center px-4 border border-white bg-white 
-          mt-2 hover:-translate-y-1 hover:bg-[#AF4D32] hover:text-white h transition duration-300"
+          className="text-dark-brown rounded-[60px] py-2 text-center px-4 border border-white bg-white 
+          mt-2 hover:-translate-y-1 hover:bg-dark-brown hover:text-white transition duration-300"
         >
           {buttonText}
         </button>
       ) : (
-        <button onClick={link} className="text-[#AF4D32] rounded-[60px] text-center border border-white bg-white py-2  px-4 
-         mt-2 hover:-translate-y-1 hover:bg-[#AF4D32] hover:text-white h transition duration-300">
-          {buttonText}
-        </button>
+        <div className="lg:mt-9 mt-4 hover:-translate-y-1 transition duration-300">
+          <Link to={link} className="text-dark-brown rounded-[60px] text-center border border-white bg-white py-2  px-4 
+           hover:bg-dark-brown hover:text-white ">
+            {buttonText}
+          </Link>
+        </div>
       )}
     </div>
   );

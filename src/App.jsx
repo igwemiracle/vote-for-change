@@ -10,14 +10,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./layouts/Navbar";
 
 const Layout = ({ children }) => {
-  const location = useLocation(); // Now it works correctly inside Layout
+  const location = useLocation();
   const hideNavFooterRoutes = ["/signin", "/vote", "/confirmation"];
   const shouldHideNavFooter = hideNavFooterRoutes.includes(location.pathname);
 
   return (
     <div className="flex flex-col min-h-screen">
       {!shouldHideNavFooter && <Navbar />}
-      <div className='flex-grow flex flex-col  w-full'>
+      <div className='flex-grow flex flex-col w-full'>
         {children}
       </div>
       {!shouldHideNavFooter && <Footer />}

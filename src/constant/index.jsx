@@ -140,22 +140,14 @@ export const candidate = [
 export const Database = [
   {
     id: 1,
-    email: 'igwe12@gmail.com'
+    matricNumber: '22/60194/UE'
   },
   {
     id: 2,
-    email: 'mike12@gmail.com'
+    matricNumber: '22/1234/AB'
   },
   {
     id: 3,
-    email: 'john12@gmail.com'
-  },
-  {
-    id: 4,
-    email: 'paul12@gmail.com'
-  },
-  {
-    id: 5,
-    email: 'peter12@gmail.com'
+    matricNumber: '22/5678/CD'
   },
 ]

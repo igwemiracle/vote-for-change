@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const candidates = [
-  { id: 1, name: 'Comr Shie Paul' },
-  { id: 2, name: 'Comr John Tarka' },
-  { id: 3, name: 'Comr James Akombo' },
-];
+import { candidate as candidates } from '../constant';
 
 const VotingPage = () => {
   const [selected, setSelected] = useState(null);

@@ -14,6 +14,10 @@ export default {
       screens: {
         xs: '303px',
       },
+      colors: {
+        'dark-brown': '#AF4D32',
+        'dark-gray': '#2D3F51'
+      }
     },
   },
   plugins: [],
