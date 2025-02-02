@@ -5,8 +5,11 @@ export default function BreadCrumbs() {
   return (
     <div className="flex items-center xs:py-[8px] xs:pl-8 xs:gap-1 sm:pl-16 lg:pl-24 sm:gap-2 lg:gap-4
      py-4 overflow-y-auto whitespace-nowrap ">
-      <Link to={"/"} className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]
-        "> Home </Link>
+      <Link
+        to={"/"}
+        className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]">
+        Home
+      </Link>
 
       <span className="text-white dark:text-gray-300">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
@@ -14,7 +17,11 @@ export default function BreadCrumbs() {
         </svg>
       </span>
 
-      <Link to={"/candidates"} className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]"> Candidates </Link>
+      <Link
+        to={"/candidates"}
+        className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]">
+        Candidates
+      </Link>
 
       <span className="text-white dark:text-gray-300">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
@@ -22,7 +29,11 @@ export default function BreadCrumbs() {
         </svg>
       </span>
 
-      <Link to={"/vote"} className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]"> Vote </Link>
+      <Link
+        to={"/vote"}
+        className="text-white hover:text-gray-300 xs:text-[12px] xs:gap-3 sm:text-[18px]">
+        Vote
+      </Link>
     </div>
   )
 }

@@ -86,6 +86,10 @@ export const candidate = [
     id: 1,
     name: "Comr Shie Paul",
     bio: "Experienced leader with a strong track record in student governance and advocacy.",
+    age: 30,
+    LeadershipExperience: "Departmental President",
+    Faculty: "Science",
+    Department: "Computer Science",
     manifesto: "Promising better education opportunities, enhanced student welfare, and inclusivity.",
     photo: images.buhari,
     achievements: [
@@ -103,6 +107,10 @@ export const candidate = [
     id: 2,
     name: "Comr John Tarka",
     bio: "Dedicated organizer committed to fostering unity and promoting innovative student programs.",
+    age: 37,
+    LeadershipExperience: "Student Union President (2023 - Present)",
+    Faculty: "Social Sciences",
+    Department: "Political Science",
     manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
     photo: images.jona,
     achievements: [
@@ -120,6 +128,10 @@ export const candidate = [
     id: 3,
     name: "Comr James Akombo",
     bio: "Dedicated organizer committed to fostering unity and promoting innovative student programs.",
+    age: "34",
+    LeadershipExperience: "President, Drama Club (2023 - Present)",
+    Faculty: "Arts",
+    Department: "Theatre and Performing Arts",
     manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
     photo: images.tini,
     achievements: [
