@@ -1,5 +1,5 @@
 import { images } from '../assets/images';
-
+import { SocialIcon } from 'react-social-icons';
 
 export const heroData = [
   {
@@ -90,6 +90,7 @@ export const candidate = [
     LeadershipExperience: "Departmental President",
     Faculty: "Science",
     Department: "Computer Science",
+    slogan: "Together We Can Do It All!",
     manifesto: "Promising better education opportunities, enhanced student welfare, and inclusivity.",
     photo: images.buhari,
     achievements: [
@@ -101,7 +102,12 @@ export const candidate = [
       { year: "2021", event: "Elected as Class Representative" },
       { year: "2022", event: "Became Vice President of SU" },
       { year: "2023", event: "Led a campus-wide sustainability campaign" },
-    ]
+    ],
+    socials: [
+      { url: "https://facebook.com" },
+      { url: "https://twitter.com" },
+      { url: "https://linkedin.com" },
+    ],
   },
   {
     id: 2,
@@ -111,6 +117,7 @@ export const candidate = [
     LeadershipExperience: "Student Union President (2023 - Present)",
     Faculty: "Social Sciences",
     Department: "Political Science",
+    slogan: 'Leadership That Matters',
     manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
     photo: images.jona,
     achievements: [
@@ -122,7 +129,12 @@ export const candidate = [
       { year: "2020", event: "Became Head of Sports Committee" },
       { year: "2021", event: "Elected as SU Sports Director" },
       { year: "2023", event: "Introduced campus-wide tech training" },
-    ]
+    ],
+    socials: [
+      { url: "https://facebook.com" },
+      { url: "https://twitter.com" },
+      { url: "https://linkedin.com" },
+    ],
   },
   {
     id: 3,
@@ -132,6 +144,7 @@ export const candidate = [
     LeadershipExperience: "President, Drama Club (2023 - Present)",
     Faculty: "Arts",
     Department: "Theatre and Performing Arts",
+    slogan: 'Your Voice, Your Choice',
     manifesto: "Focused on providing innovative programs, improved campus facilities, and student empowerment.",
     photo: images.tini,
     achievements: [
@@ -143,6 +156,11 @@ export const candidate = [
       { year: "2020", event: "Became Head of Sports Committee" },
       { year: "2021", event: "Elected as SU Sports Director" },
       { year: "2023", event: "Introduced campus-wide tech training" },
+    ],
+    socials: [
+      { url: "https://facebook.com" },
+      { url: "https://twitter.com" },
+      { url: "https://linkedin.com" },
     ],
   }
 ]

@@ -1,15 +1,14 @@
 import React from 'react'
 import { candidate } from '../constant';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 
 
 export default function CandidateList2() {
   return (
     <div className='flex flex-col gap-24 w-[90%] mx-auto my-16'>
       {candidate.map((c) => (
-        // <div className='flex flex-wrap gap-6'>
-        <div className='flex flex-col sm:flex-row gap-5'>
+        <div key={c.id} className='flex flex-col sm:flex-row gap-5'>
           <div className='w-full xs:h-[270px] sm:w-[250px] sm:h-[250px] lg:w-[345px] lg:h-[345px]'>
             <img className='rounded-[15px] object-cover w-full h-full' src={c.photo} alt={c.name} />
           </div>
@@ -18,12 +17,16 @@ export default function CandidateList2() {
               <h3 className="text-3xl font-semibold text-gray-800 mb-2">
                 {c.name}
               </h3>
-              <p className='text-[15px] text-gray-500'>Vote for SU president</p>
+              <p className='text-[15px] text-gray-500'>{c.slogan}</p>
             </div>
-            <div className='flex gap-4'>
-              <Facebook fill='black' />
-              <Twitter fill='black' />
-              <Instagram />
+            <div className='flex gap-2'>
+              {c.socials.map((social, index) => (
+                <SocialIcon
+                  key={index}
+                  url={social.url}
+                  style={{ width: '40px', height: '40px' }}
+                />
+              ))}
             </div>
             <div>
               <ol className="list-inside text-left text-gray-700 space-y-2 text-lg">
