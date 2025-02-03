@@ -8,7 +8,6 @@ import VotingPage from "./pages/VotingPage";
 import ConfirmationPage from "./pages/ConfirmationPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./layouts/Navbar";
-import CandidateList2 from "./pages/CandidateList2";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -32,7 +31,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/candidates" element={<CandidateList2 />} />
+          <Route path="/candidates" element={<CandidateList />} />
           <Route path="/candidates/:id" element={<CandidateProfile />} />
           <Route path="/signin" element={<LoginPage />} />
           <Route

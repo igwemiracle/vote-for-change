@@ -1,49 +1,57 @@
-import React from 'react';
+import React from 'react'
+import { candidate } from '../constant';
 import { Link } from 'react-router-dom';
-import { candidate as candidates } from '../constant';
+import { SocialIcon } from 'react-social-icons';
 
-const CandidateList = () => {
+
+export default function CandidateList() {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center text-dark-gray mb-8">
-          Meet the Candidates
-        </h2>
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {candidates.map((candidate) => (
-            <div
-              key={candidate.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
-            >
-              <div className="relative">
-                <img
-                  src={candidate.photo}
-                  alt={candidate.name}
-                  className="w-full h-56 object-cover"
-                />
-                {/* Gradient overlay to add depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {candidate.name}
-                </h3>
-                {/* Optional short bio; fallback text provided */}
-                <p className="text-gray-600 mb-4">
-                  {candidate.shortBio || "Dedicated candidate with a vision for the future."}
-                </p>
-                <Link to={`/candidates/${candidate.id}`}>
-                  <button className="w-full px-4 py-2 bg-dark-brown text-white rounded-md hover:bg-[#8F3D28] transition">
-                    View Profile
-                  </button>
-                </Link>
-              </div>
+    <div className='flex flex-col gap-24 w-[90%] mx-auto my-16'>
+      {candidate.map((c) => (
+        <div key={c.id} className='flex flex-col sm:flex-row gap-5'>
+          <div className='w-full xs:h-[270px] sm:w-[250px] sm:h-[250px] lg:w-[345px] lg:h-[360px]'>
+            <img className='rounded-[15px] object-cover w-full h-full' src={c.photo} alt={c.name} />
+          </div>
+          <div className='flex flex-col gap-6'>
+            <div>
+              <h3 className="text-3xl font-semibold text-gray-800 mb-2">
+                {c.name}
+              </h3>
+              <p className='text-[15px] text-gray-500'>{c.slogan}</p>
             </div>
-          ))}
+            <div className='flex gap-2'>
+              {c.socials.map((social, index) => (
+                <SocialIcon
+                  key={index}
+                  url={social.url}
+                  style={{ width: '40px', height: '40px' }}
+                />
+              ))}
+            </div>
+            <div>
+              <ol className="list-inside text-left text-gray-700 space-y-2 text-lg">
+                <li className='text-[15px]'>
+                  <span className="font-normal text-black">Department:</span> {c.Department}
+                </li>
+                <li className='text-[15px]'>
+                  <span className="font-normal text-black">Faculty:</span> {c.Faculty}
+                </li>
+                <li className='text-[15px]'>
+                  <span className="font-normal text-black">Leadership Experience:</span> {c.LeadershipExperience}
+                </li>
+                <li className='text-[15px]'>
+                  <span className="font-normal text-black">Age:</span> {c.age}
+                </li>
+              </ol>
+            </div>
+            <Link to={`/candidates/${c.id}`}
+              className="text-gray-600 border-2 border-solid border-gray-300 rounded-[60px] hover:border-0 py-2 text-center  text-[16px] w-40 sm:w-[9rem] hover:-translate-y-1 hover:bg-dark-brown hover:text-white transition duration-300">
+              View Full Bio
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
-  );
-};
+      ))}
 
-export default CandidateList;
+    </div>
+  )
+}

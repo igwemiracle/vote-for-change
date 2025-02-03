@@ -15,10 +15,10 @@ const CandidateProfile = () => {
   }
 
   return (
-    <div className="relative text-white">
+    <div className="relative text-white w-full mx-auto">
       {/* Profile Header */}
-      <div className="relative text-dark-gray py-6">
-        <div className="container mx-auto flex flex-col md:flex-row items-center">
+      <div className="relative text-dark-gray py-6 w-[80%] mx-auto">
+        <div className=" mx-auto flex flex-col md:flex-row items-center">
           <img
             src={candidate.photo}
             alt={`${candidate.name}'s profile`}
@@ -32,9 +32,9 @@ const CandidateProfile = () => {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto p-6">
+      <div className="mx-auto p-6 w-full">
         {/* Manifesto Section */}
-        <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div className="bg-white shadow-lg rounded-lg p-4 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-dark-gray">Manifesto</h2>
           <p className="text-gray-700">{candidate.manifesto}</p>
         </div>
