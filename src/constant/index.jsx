@@ -1,5 +1,4 @@
 import { images } from '../assets/images';
-import { SocialIcon } from 'react-social-icons';
 
 export const heroData = [
   {
@@ -164,8 +163,6 @@ export const candidate = [
     ],
   }
 ]
-
-
 
 export const Database = [
   {

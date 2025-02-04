@@ -50,7 +50,7 @@ const Homepage = () => {
           </p>
           <Link
             to={'/vote'}
-            className="border border-solid border-white rounded-[60px] hover:border-0 py-4 text-center  text-lg shadow-lg w-40 sm:w-[12rem] hover:-translate-y-1 hover:bg-dark-brown hover:text-white h transition duration-300">
+            className="border border-solid border-white rounded-[60px] hover:border-0 py-3 text-center  text-lg shadow-lg w-40 sm:w-[12rem] hover:-translate-y-1 hover:bg-dark-brown hover:text-white h transition duration-300">
             Get Started
           </Link>
         </div>

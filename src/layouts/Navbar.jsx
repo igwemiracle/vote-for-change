@@ -16,7 +16,7 @@ const Navbar = () => {
             <h1 className="xs:text-[20px] sm:text-[40px] sm:leading-[3rem] lg:text-[55px] font-bold lg:mb-4 ">
               Benue State University, Makurdi.
             </h1>
-            <p className="xs:text-[12px] sm:text-[20px] lg:text-[25px] font-cookie">
+            <p className="xs:text-[18px] sm:text-[28px] lg:text-[40px] font-cookie">
               Welcomes you to her Student election 2025.
             </p>
           </div>
