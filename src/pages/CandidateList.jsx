@@ -31,16 +31,16 @@ export default function CandidateList() {
             <div>
               <ol className="list-inside text-left text-gray-700 space-y-2 text-lg">
                 <li className='text-[15px]'>
-                  <span className="font-normal text-black">Faculty:</span> {c.Faculty}
+                  <span className="font-normal text-black">Faculty &nbsp;&nbsp;:&nbsp;&nbsp;</span> {c.Faculty}
                 </li>
                 <li className='text-[15px]'>
-                  <span className="font-normal text-black">Department:</span> {c.Department}
+                  <span className="font-normal text-black">Department &nbsp;&nbsp;:&nbsp;&nbsp;</span> {c.Department}
                 </li>
                 <li className='text-[15px]'>
-                  <span className="font-normal text-black">Leadership Experience:</span> {c.LeadershipExperience}
+                  <span className="font-normal text-black">Leadership Experience &nbsp;&nbsp;:&nbsp;&nbsp;</span> {c.LeadershipExperience}
                 </li>
                 <li className='text-[15px]'>
-                  <span className="font-normal text-black">Age:</span> {c.age}
+                  <span className="font-normal text-black">Age &nbsp;&nbsp;:&nbsp;&nbsp;</span> {c.age}
                 </li>
               </ol>
             </div>
