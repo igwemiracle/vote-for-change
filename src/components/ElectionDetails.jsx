@@ -11,7 +11,7 @@ export default function ElectionDetails() {
             <h4 className="text-xl font-semibold mb-4 text-gray-800">Eligibility & Guidelines</h4>
             <ul className="list-disc list-inside text-gray-700 space-y-3">
               <li>
-                <span className="font-bold">Eligibility:</span> Only BSU students with active IDs are eligible.
+                <span className="font-bold">Eligibility:</span> Only BSU students with active matric number are eligible.
               </li>
               <li>
                 <span className="font-bold">Voting Rights:</span> Your vote is private and can be cast only once.
@@ -25,10 +25,10 @@ export default function ElectionDetails() {
             <h4 className="text-xl font-semibold mb-4 text-gray-800">Important Dates & Info</h4>
             <ul className="list-disc list-inside text-gray-700 space-y-3">
               <li>
-                <span className="font-bold">Voting Deadline:</span> January 25th, 11:59 PM.
+                <span className="font-bold">Voting Deadline:</span> March 25th, 11:59 PM.
               </li>
               <li>
-                <span className="font-bold">Results Announcement:</span> January 26th, 2025, at the Student Union Hall.
+                <span className="font-bold">Results Announcement:</span> March 26th, 2025, at the Student Union Hall.
               </li>
               <li>
                 <span className="font-bold">Support:</span> For technical help, contact <a href="#" className="text-blue-600 hover:underline">support@bsu.edu</a>.

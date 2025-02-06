@@ -16,7 +16,7 @@ const HowToVote = () => {
         <div className="flex-1 rounded-lg shadow-md xs:p-4 lg:p-6">
           <ol className="list-decimal list-inside text-left text-gray-700 space-y-5 text-lg">
             <li>
-              <span className="font-bold">Step 1:</span> Ensure you are registered to vote. Sign up using your email and password if needed.
+              <span className="font-bold">Step 1:</span> Ensure you are registered to vote. Sign up using your Matric number.
             </li>
             <li>
               <span className="font-bold">Step 2:</span> Browse the list of candidates and read their manifestos.
