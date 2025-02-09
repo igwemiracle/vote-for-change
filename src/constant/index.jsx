@@ -164,17 +164,17 @@ export const candidate = [
   }
 ]
 
-export const Database = [
-  {
-    id: 1,
-    matricNumber: '22/60194/UE'
-  },
-  {
-    id: 2,
-    matricNumber: '22/1234/AB'
-  },
-  {
-    id: 3,
-    matricNumber: '22/5678/CD'
-  },
-]
+// export const Database = [
+//   {
+//     id: 1,
+//     matricNumber: '22/60194/UE'
+//   },
+//   {
+//     id: 2,
+//     matricNumber: '22/1234/AB'
+//   },
+//   {
+//     id: 3,
+//     matricNumber: '22/5678/CD'
+//   },
+// ]

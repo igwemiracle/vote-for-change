@@ -24,7 +24,7 @@ const VotingPage = () => {
       localStorage.setItem('votedCandidate', selected);
       setTimeout(() => {
         navigate('/confirmation');
-      }, 2000); // Redirect after 2 seconds
+      }, 1000); // Redirect after 2 seconds
     }
   };
 
